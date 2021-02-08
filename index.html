@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Valentine's Day </title>
+        <link rel = "stylesheet" type= "text/css" href="style.css">
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        <image src = "Balloon.jpeg" id = "image" draggable="true" ondragstart="drag(event)"></image>
+        <div id = "container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id = "intro-message">Try and drag the picture across </div>
+        <image src = "arrow.jpg" id = "arrow"></image>
+        <div id = "letter-trial">Open The letter</div>
+        <div onmouseover="setTimeout(showoptions,2300)"class = "wrapper" id = "wrapper_">
+            <div class = "mail">
+                <div class = "cover"></div>
+                <div class = "letter"><h1>Will You Be My Valentine?</h1></div>
+            </div>
+        </div> 
+        <div class="button-container" id = "button">
+            <input type="radio" name = "radio" id = "opt1">
+            <label for= "opt1" class="label1">
+                <span>YES</span>
+            </label>
+            <input type="radio" name = "radio" id = "opt2">
+            <label for= "opt2" class="label2">
+                <span>NO</span>
+            </label>
+        </div>
+    </body>
+</html>
